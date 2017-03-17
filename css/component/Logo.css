@@ -1,0 +1,13 @@
+.Logo{
+    font-size: 30px;
+    background-color: white;
+}
+
+.Logo img{
+    width: 50px;
+    vertical-align: middle;
+}
+
+.Logo span{
+    vertical-align: middle;
+}

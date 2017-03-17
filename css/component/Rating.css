@@ -1,0 +1,12 @@
+.rating span{
+    margin-left: 5px;
+    font-size: 28px;
+    position: relative;
+}
+.rating span.ratingOn:before{
+    content: '\2605';
+    position: absolute;
+    font-size: 28px;
+    color: gold;
+    padding: 1px;
+}

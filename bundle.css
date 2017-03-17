@@ -1,0 +1,80 @@
+.Button{
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background-color: #6f001b;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    transition: transform;
+    -webkit-transition: transform;
+}
+
+.Button:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.Button.middle{
+    font-size: 32px;
+}.Logo{
+    font-size: 30px;
+    background-color: white;
+}
+
+.Logo img{
+    width: 50px;
+    vertical-align: middle;
+}
+
+.Logo span{
+    vertical-align: middle;
+}.rating span{
+    margin-left: 5px;
+    font-size: 28px;
+    position: relative;
+}
+.rating span.ratingOn:before{
+    content: '\2605';
+    position: absolute;
+    font-size: 28px;
+    color: gold;
+    padding: 1px;
+}body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    margin-top: 5px;
+    font-family: "SimSun", "宋体", "Arial Narrow";
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+select, input, img, select {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #009;
+}
+
+a:visited {
+    color: #800080;
+}
+
+a:hover, a:active, a:focus {
+    color: #c00;
+    text-decoration: underline;
+}
