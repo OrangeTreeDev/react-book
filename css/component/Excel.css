@@ -1,0 +1,33 @@
+
+.Excel table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.Excel table thead tr{
+    opacity: 0.9;
+    background-color: #6f001b;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    height: 40px;
+}
+
+.Excel table tbody tr{
+    height: 50px;
+    background-color: white;
+}
+
+.Excel table tbody tr td{
+    border-right: 2px solid gainsboro;
+    border-bottom: 2px solid gainsboro;
+}
+
+.Excel table tbody tr td:last-child{
+    border-right: none;
+}
+
+.Excel table tbody tr:last-child{
+    border-bottom : none;
+}

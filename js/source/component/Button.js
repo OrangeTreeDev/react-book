@@ -13,16 +13,8 @@ class Button extends Component{
 
     render(){
         var className = ClassName('Button', this.props.className);
-        return (<button className={className}>{this.props.txt}</button>);
+        return (<button {...this.props} className={className}>{this.props.children}</button>);
     }
-}
-
-Button.propTypes ={
-    txt : PropTypes.string
-}
-
-Button.defaultProps ={
-    text : ''
 }
 
 export default Button;

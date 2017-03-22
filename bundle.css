@@ -1,4 +1,43 @@
-.Button{
+
+.Actions span{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    border-width: 2px;
+    border-style: solid;
+    margin: 0px 5px;
+    transition: transform;
+    transform: scale(1, 1);
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.Actions span:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.Actions span:last-child{
+    margin-right: 0px;
+}
+
+.Actions .action-info{
+    color: #3498db;
+    border-color: #3498db;
+}
+
+.Actions .action-edit{
+    color: #000;
+    border-color: #000;
+}
+
+.Actions .action-delete{
+    color: #b7477d;
+    border-color: #b7477d;
+}.Button{
     font-size: 18px;
     font-weight: 700;
     color: white;
@@ -9,6 +48,7 @@
     text-align: center;
     transition: transform;
     -webkit-transition: transform;
+    cursor: pointer;
 }
 
 .Button:hover{
@@ -17,7 +57,115 @@
 
 .Button.middle{
     font-size: 32px;
-}.Logo{
+}.Dialog{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0,0,0,.7);
+}
+
+.Dialog .dialog-entity{
+    width: 350px;
+    margin: 50px auto;
+}
+
+.Dialog .dialog-head{
+    height: 80px;
+    line-height: 80px;
+    background-color: #6f001b;
+    font-size: 38px;
+    color: #f0f0f0;
+    padding-left: 20px;
+}
+
+.Dialog .dialog-content{
+    overflow: hidden;
+    padding: 10px 20px 20px 20px;
+    max-height: 300px;
+    background-color: white;
+}
+
+.Dialog .dialog-content > span{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.Dialog .dialog-footer{
+    height: 70px;
+    line-height: 70px;
+    padding-right: 20px;
+    text-align: right;
+    background-color: white;
+    border-top: 1px solid gainsboro;
+}
+
+.Dialog .dialog-footer .action-cancel{
+    color: gray;
+    vertical-align: middle;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.Dialog .dialog-footer .Button.action-confirm{
+    vertical-align: middle;
+}
+
+.Dialog .dialog-content .item-info label{
+    color: #a0a0a0;
+    display: block;
+    font-size: 12px;
+    padding: 12px 0 6px
+}
+
+.Dialog .dialog-content .item-info p{
+    font-size: 18px;
+}
+
+.Dialog .dialog-content .item-edit label{
+    color: #a0a0a0;
+    display: block;
+    font-size: 12px;
+    padding: 12px 0 6px
+}
+
+.Dialog .dialog-content .item-edit input{
+    padding: 10px;
+}
+.Excel table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.Excel table thead tr{
+    opacity: 0.9;
+    background-color: #6f001b;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    height: 40px;
+}
+
+.Excel table tbody tr{
+    height: 50px;
+    background-color: white;
+}
+
+.Excel table tbody tr td{
+    border-right: 2px solid gainsboro;
+    border-bottom: 2px solid gainsboro;
+}
+
+.Excel table tbody tr td:last-child{
+    border-right: none;
+}
+
+.Excel table tbody tr:last-child{
+    border-bottom : none;
+}
+.Logo{
     font-size: 30px;
     background-color: white;
 }
@@ -47,9 +195,9 @@
 }
 
 body {
-    background: #fff;
+    background: gainsboro;
     color: #333;
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 5px;
     font-family: "SimSun", "宋体", "Arial Narrow";
 }
@@ -77,4 +225,43 @@ a:visited {
 a:hover, a:active, a:focus {
     color: #c00;
     text-decoration: underline;
+}
+.Display{
+}
+
+.Display .header{
+    height: 100px;
+    line-height: 100px;
+    background-color: #6f001b;
+}
+
+.Display .header img{
+    width: 111px;
+    vertical-align: middle;
+}
+
+.Display .header span{
+    margin-left: 10px;
+    font-size: 44px;
+    color: #f0f0f0;
+    vertical-align: middle;
+}
+
+.Display .content{
+    margin: 40px 30px 0px 30px;
+}
+
+.Display .content .toolbar{
+    margin-bottom: 10px;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+}
+
+.Display .content .toolbar input.searchInpt{
+    padding: 10px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
 }

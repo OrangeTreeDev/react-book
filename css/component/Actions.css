@@ -1,0 +1,40 @@
+
+.Actions span{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    border-width: 2px;
+    border-style: solid;
+    margin: 0px 5px;
+    transition: transform;
+    transform: scale(1, 1);
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.Actions span:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.Actions span:last-child{
+    margin-right: 0px;
+}
+
+.Actions .action-info{
+    color: #3498db;
+    border-color: #3498db;
+}
+
+.Actions .action-edit{
+    color: #000;
+    border-color: #000;
+}
+
+.Actions .action-delete{
+    color: #b7477d;
+    border-color: #b7477d;
+}

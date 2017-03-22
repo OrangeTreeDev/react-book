@@ -37,6 +37,21 @@ var Rating = function (_React$Component) {
     }
 
     _createClass(Rating, [{
+        key: 'getValue',
+        value: function getValue() {
+            return this.state.ratingCount;
+        }
+    }, {
+        key: 'componentWillReceiveProps',
+        value: function componentWillReceiveProps(nextProps) {
+            if (this.state.ratingCount != nextProps.defaultValue) {
+                this.setState({
+                    tempRatingCount: nextProps.defaultValue,
+                    ratingCount: nextProps.defaultValue
+                });
+            }
+        }
+    }, {
         key: '_handleMouseover',
         value: function _handleMouseover(currentIdx, e) {
 
@@ -78,7 +93,7 @@ var Rating = function (_React$Component) {
 
             return _react2.default.createElement(
                 'div',
-                { className: 'rating', onMouseOut: this._handleMouseout },
+                { className: 'rating', onMouseOut: this._handleMouseout, style: this.props.allowEdit ? { pointerEvents: 'auto' } : { pointerEvents: 'none' } },
                 stars
             );
         }

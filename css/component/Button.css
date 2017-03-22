@@ -9,6 +9,7 @@
     text-align: center;
     transition: transform;
     -webkit-transition: transform;
+    cursor: pointer;
 }
 
 .Button:hover{

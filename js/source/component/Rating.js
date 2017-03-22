@@ -15,6 +15,20 @@ class Rating extends React.Component{
         this._handleMouseout = this._handleMouseout.bind(this);
     }
 
+    getValue(){
+        return this.state.ratingCount;
+    }
+
+    componentWillReceiveProps(nextProps){
+        if (this.state.ratingCount != nextProps.defaultValue ){
+            this.setState({
+                tempRatingCount:  nextProps.defaultValue,
+                ratingCount: nextProps.defaultValue
+            });
+        }
+
+    }
+
     _handleMouseover(currentIdx, e){
 
         this.setState({
@@ -47,7 +61,7 @@ class Rating extends React.Component{
         }
 
         return (
-            <div className="rating" onMouseOut={this._handleMouseout}>
+            <div className="rating" onMouseOut={this._handleMouseout} style={ this.props.allowEdit? {pointerEvents:'auto'}:{pointerEvents:'none'} }>
                 {stars}
             </div>
         );
